@@ -1,3 +1,3 @@
 # TRB-Fusion-Restaurant-website
 ### Home page
-![index](index)
+![index](websiteimage/index.png)
