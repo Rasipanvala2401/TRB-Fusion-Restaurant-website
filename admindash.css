@@ -1,0 +1,164 @@
+body {
+    background-color: antiquewhite;
+    color: rgb(56, 64, 139);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: antiquewhite;
+    top: 0%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    right: 0%;
+    z-index: 4;
+    
+}
+
+
+.navLinkWrap .navbar-nav {
+    justify-content: space-around;
+    display: flex;
+    flex-grow: 2;
+    list-style: none;
+
+}
+
+.navLinkWrap ul li {
+    margin-right: 30px;
+    padding-left: 10px;
+
+}
+
+.navLinkWrap ul li a {
+    color: rgb(56, 64, 139);
+    text-decoration: none;
+    justify-content: space-around;
+    position: relative;
+}
+
+.navbar .navbar-toggler {
+    background-color: rgb(56, 64, 139);
+    width: 40px;
+    height: 40px;
+}
+
+.navbar .navbar-toggler-icon {
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    height: 30px;
+    width: 30px;
+    margin-left: -7.5px;
+    border: none;
+}
+
+.navbar-collapse {
+    background-color: antiquewhite;
+    max-height: 70vh;
+    overflow-y: auto;
+    scrollbar-color: antiquewhite;
+    overflow-x: hidden;
+ }
+
+.navLinkWrap ul li a#home{
+	color: rgb(62, 80, 218);
+}
+
+.navLinkWrap ul li a#home::after {
+	width: 100%;
+}
+
+.navLinkWrap ul li a::after {
+    content: "";
+    position: absolute;
+    right: 0%;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: rgb(62, 80, 218);
+    transition: width 1s;
+    text-decoration: none;
+}
+
+.navLinkWrap ul li a:hover {
+    text-decoration: none;
+    color: rgb(62, 80, 218);
+}
+
+.navLinkWrap ul li a:hover::after {
+    text-decoration: none;
+    width: 105%;
+}
+
+hr {
+    position: fixed;
+    top: 53px;
+    height: 1.5px;
+    width: 100%;
+    background-color: rgb(56, 64, 139);
+    opacity: 1;
+    left: 0%;
+    z-index: 2;
+}
+
+h4 {
+    padding: 10px 0px;
+}
+
+input {
+    width: 100%;
+}
+
+.err {
+    color: tomato;
+    padding: 20px 0px;
+}
+
+button {
+    height: 40px;
+    width: 100%;
+    color: rgb(56, 64, 139);
+    border: 2px solid rgb(56, 64, 139);
+    background-color: antiquewhite;
+}
+
+button:hover {
+    background-color: rgb(56, 64, 139);
+    color: antiquewhite;
+}
+
+footer {
+    margin-bottom: 0%;
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 50px;
+    width: 100%;
+}
+
+footer h3 {
+    background-color: white;
+    color: rgb(56, 64, 139);
+}
+
+footer h5 {
+    color: rgb(56, 64, 139);
+    opacity: 0.4;
+}
+
+footer a img {
+    height: 20px;
+    padding: 10px;
+}
+
+footer a img:hover {
+    border-radius: 50%;
+    border: 2px solid aliceblue;
+}
